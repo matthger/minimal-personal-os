@@ -1,0 +1,171 @@
+<resources>
+    <string name="app_name">MinimalPersonalOS</string>
+    <string name="settings_title">Settings</string>
+    <string name="select_home_apps">Select Home Apps</string>
+    <string name="select_home_apps_desc">Choose which apps appear on your launcher</string>
+    <string name="select_apps_dialog_title">Select Apps (%1$d/4)</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="back">Back</string>
+    <string name="settings_button">Settings</string>
+    <string name="phone_button">Phone</string>
+    <string name="notes_button">Notes</string>
+    <string name="gallery_button">Gallery</string>
+    <string name="back_button">Back</string>
+    <string name="select_primary_color">Change Primary Color</string>
+    <string name="select_primary_color_desc">Customize the color of buttons and icons</string>
+    <string name="color_purple">Purple</string>
+    <string name="color_pink">Pink</string>
+    <string name="color_ochre">Ochre</string>
+    <string name="color_mint">Dark Mint</string>
+
+    <!-- Settings Structure -->
+    <string name="settings_protected_section">Protected Settings</string>
+    <string name="settings_advanced_section">Advanced Settings</string>
+
+    <!-- Appearance Group -->
+    <string name="appearance_group">Appearance</string>
+    <string name="visual_profile">Visual Profile</string>
+    <string name="minimalistic_mode_label">Minimalistic</string>
+    <string name="simple_mode_label">Clear and Simple</string>
+    <string name="font_size">Font Size</string>
+    <string name="font_size_desc">Adjust text scale</string>
+    <string name="brightness">Brightness</string>
+    <string name="brightness_desc">Control screen brightness</string>
+
+    <!-- Sound & Feedback Group -->
+    <string name="sound_feedback_group">Sound &amp; Feedback</string>
+    <string name="click_feedback">Click Feedback</string>
+    <string name="click_feedback_desc">Enable acoustic feedback</string>
+    <string name="click_volume">Click Volume</string>
+    <string name="click_volume_desc">Adjust feedback volume</string>
+
+    <!-- Protected: App Configuration -->
+    <string name="app_config_group">App Configuration</string>
+    <string name="manage_app_slots">Manage App Slots</string>
+    <string name="manage_app_slots_desc">Add or remove apps</string>
+
+    <!-- Protected: Contacts -->
+    <string name="contacts_group">Contacts &amp; Communication</string>
+    <string name="core_contacts">Core Contacts</string>
+    <string name="core_contacts_desc">Set phone contacts</string>
+    <string name="core_contacts_desc_select">Select which contacts appear at the top of your phone</string>
+
+    <!-- Protected: Security -->
+    <string name="security_group">Security &amp; Access</string>
+    <string name="change_pin">Change PIN</string>
+    <string name="change_pin_desc">Update access code</string>
+    <string name="toggle_pin_protection">PIN Protection</string>
+    <string name="toggle_pin_protection_desc">Enable/disable protected settings</string>
+
+    <!-- Protected: System -->
+    <string name="system_group">System</string>
+    <string name="android_settings_access">Android Settings</string>
+    <string name="android_settings_access_desc">Access system settings</string>
+    <string name="reset_launcher">Reset Launcher</string>
+    <string name="reset_launcher_desc">Restore factory defaults</string>
+
+    <!-- PIN Dialog -->
+    <string name="pin_prompt">Protected Settings</string>
+    <string name="pin_prompt_desc">Enter PIN to access protected settings</string>
+    <string name="pin_input_hint">Enter 4-digit PIN</string>
+    <string name="pin_error">Incorrect PIN</string>
+    <string name="pin_show">Show PIN</string>
+    <string name="pin_hide">Hide PIN</string>
+    <string name="pin_confirm">Set PIN</string>
+    <string name="pin_confirm_desc">Enter a new 4-digit PIN</string>
+    <string name="pin_setup_warning">Click \"Confirm\" after you’ve written down your PIN. You will not be able to recover your PIN after leaving Protected Settings!</string>
+    <string name="pin_mismatch">PINs do not match</string>
+
+    <!-- Protected/Advanced button -->
+    <string name="protected_settings_button">Protected Settings</string>
+    <string name="advanced_settings_button">Advanced Settings</string>
+    <string name="protected_settings_desc">Enter PIN to access protected settings</string>
+    <string name="advanced_settings_desc">Open advanced settings</string>
+
+    <!-- Actions -->
+    <string name="unlock">Unlock</string>
+    <string name="confirm">Confirm</string>
+    <string name="enabled">Enabled</string>
+    <string name="disabled">Disabled</string>
+    <string name="none_selected">None selected</string>
+    <string name="reset_launcher_confirm_message">Are you sure you want to reset the launcher and restore factory defaults?</string>
+    <string name="yes">Yes</string>
+
+    <!-- Phone Screen -->
+    <string name="phone_screen_title">Phone</string>
+    <string name="phone_screen_favorites">Favorites</string>
+    <string name="phone_screen_all_contacts">All Contacts</string>
+    <string name="phone_screen_no_contacts">No contacts available</string>
+    <string name="gallery_screen_no_images">No media available</string>
+    <string name="phone_screen_loading">Loading contacts&#8230;</string>
+    <string name="phone_screen_permission_msg">Additional permission is required to use this feature.</string>
+    <string name="phone_screen_grant_btn">Grant Permission</string>
+    <string name="phone_screen_load_error">Failed to load contacts</string>
+    <string name="phone_screen_permission_denied">Contact permission required</string>
+
+    <!-- Add Contact -->
+    <string name="add_contact_title">Add Contact</string>
+    <string name="add_contact_name_hint">Name</string>
+    <string name="add_contact_phone_hint">Phone Number</string>
+    <string name="add_contact_success">Contact added</string>
+    <string name="add_contact_error">Failed to add contact</string>
+    <string name="add_contact_empty_error">Name and number are required</string>
+    <string name="add_contact_button">Add Contact</string>
+
+    <!-- Contact Actions -->
+    <string name="contact_action_call">Call</string>
+    <string name="contact_action_edit">Edit Contact</string>
+    <string name="contact_action_delete">Delete Contact</string>
+    <string name="contact_delete_confirm">Are you sure you want to delete this contact?</string>
+    <string name="contact_delete_success">Contact deleted</string>
+    <string name="contact_update_success">Contact updated</string>
+
+    <!-- Notes -->
+    <string name="notes_screen_title">Notes</string>
+    <string name="notes_no_notes">No notes yet. Tap + to add one.</string>
+    <string name="notes_save">Save Note</string>
+    <string name="notes_delete">Delete Note</string>
+    <string name="notes_placeholder">Write your note here…</string>
+    <string name="notes_delete_confirm">Delete this note?</string>
+    <string name="notes_discard_title">Unsaved Changes</string>
+    <string name="notes_discard_message">You have unsaved changes. They will be lost if you go back.</string>
+    <string name="notes_add_button">Add Note</string>
+
+    <!-- Dialer -->
+    <string name="tab_contacts">Contacts</string>
+    <string name="tab_dialer">Dialer</string>
+    <string name="dialer_delete_digit">Delete</string>
+
+    <!-- Setup Wizard -->
+    <string name="wizard_welcome_title">Welcome to MinimalPersonalOS</string>
+    <string name="wizard_welcome_text">Your minimal UI to focus in a time of attention-demanding interfaces. All the essentials you need, very simple to use.</string>
+
+    <string name="wizard_app_count_title">Configure Home Screen</string>
+    <string name="wizard_app_count_text">Choose how many apps you want on your home screen (0–4).</string>
+    <string name="wizard_app_count_science">Studies suggest that limiting the number of apps to a maximum of 4 is optimal to eliminate cognitive barriers and reduce overload.</string>
+    <string name="wizard_apps_selected">%1$d / 4 Apps Selected</string>
+
+    <string name="wizard_primary_color_title">Primary Color</string>
+    <string name="wizard_primary_color_text">Select a color for buttons and icons to personalize your experience.</string>
+
+    <string name="wizard_visual_profile_title">Visual Profile</string>
+    <string name="wizard_visual_profile_text">Choose a style that fits your needs.</string>
+    <string name="wizard_profile_minimal_title">Minimalistic</string>
+    <string name="wizard_profile_minimal_desc">Purely text-based launcher for maximum focus.</string>
+    <string name="wizard_profile_simple_title">Clear and Simple</string>
+    <string name="wizard_profile_simple_desc">Big app icons, simple and better for accessibility.</string>
+
+    <string name="wizard_all_set_title">You\'re all set!</string>
+    <string name="wizard_all_set_text">Enjoy your focused mobile experience.</string>
+    <string name="wizard_finish">Finish</string>
+
+    <string name="next_button">Next</string>
+    <string name="share_button">Share</string>
+    <string name="delete_button">Delete</string>
+    <string name="delete_image_confirm">Are you sure you want to delete this image?</string>
+    <string name="delete_video_confirm">Are you sure you want to delete this video?</string>
+    <string name="media_management_group">Media Management</string>
+    <string name="instant_delete">Instant Deletion</string>
+    <string name="instant_delete_desc">Delete images without system confirmation. Requires All Files Access.</string>
+</resources>

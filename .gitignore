@@ -1,0 +1,46 @@
+# Built-in ignores
+*.iml
+.gradle
+/local.properties
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+
+# Project specific
+*.apk
+*.aar
+*.ap_
+
+# Log files
+*.log
+
+# OS generated files
+Thumbs.db
+desktop.ini
+
+# Android Studio / IntelliJ IDEA
+.idea/
+*.iws
+*.out
+
+# Keystore files (NEVER commit these)
+*.jks
+*.keystore
+*.p12
+
+# Google Services
+google-services.json
+
+# Crashlytics
+com_crashlytics_export_strings.xml
+crashlytics.properties
+crashlytics-build.properties
+

@@ -1,0 +1,171 @@
+﻿<resources>
+    <string name="app_name">MinimalPersonalOS</string>
+    <string name="settings_title">Einstellungen</string>
+    <string name="select_home_apps">Home-Apps auswählen</string>
+    <string name="select_home_apps_desc">Wähle aus, welche Apps auf deinem Launcher erscheinen</string>
+    <string name="select_apps_dialog_title">Apps auswählen (%1$d/4)</string>
+    <string name="save">Speichern</string>
+    <string name="cancel">Abbrechen</string>
+    <string name="back">Zurück</string>
+    <string name="settings_button">Einstellungen</string>
+    <string name="phone_button">Telefon</string>
+    <string name="notes_button">Notizen</string>
+    <string name="gallery_button">Galerie</string>
+    <string name="back_button">Zurück</string>
+    <string name="share_button">Teilen</string>
+    <string name="select_primary_color">Primärfarbe ändern</string>
+    <string name="select_primary_color_desc">Passe die Farbe von Schaltflächen und Icons an</string>
+    <string name="color_purple">Lila</string>
+    <string name="color_pink">Pink</string>
+    <string name="color_ochre">Ocker</string>
+    <string name="color_mint">Dunkles Minzgrün</string>
+
+    <!-- Settings Structure -->
+    <string name="settings_protected_section">Geschützte Einstellungen</string>
+    <string name="settings_advanced_section">Erweiterte Einstellungen</string>
+
+    <!-- Appearance Group -->
+    <string name="appearance_group">Darstellung</string>
+    <string name="visual_profile">Visuelles Profil</string>
+    <string name="minimalistic_mode_label">Minimalistisch</string>
+    <string name="simple_mode_label">Klar und Einfach</string>
+    <string name="font_size">Schriftgröße</string>
+    <string name="font_size_desc">Passe die Textgröße an</string>
+    <string name="brightness">Helligkeit</string>
+    <string name="brightness_desc">Steuere die Bildschirmhelligkeit</string>
+
+    <!-- Sound & Feedback Group -->
+    <string name="sound_feedback_group">Töne &amp; Feedback</string>
+    <string name="click_feedback">Klick-Feedback</string>
+    <string name="click_feedback_desc">Akustisches Klick-Feedback aktivieren</string>
+    <string name="click_volume">Klick-Lautstärke</string>
+    <string name="click_volume_desc">Passe die Feedback-Lautstärke an</string>
+
+    <!-- Protected: App Configuration -->
+    <string name="app_config_group">App-Konfiguration</string>
+    <string name="manage_app_slots">App-Slots verwalten</string>
+    <string name="manage_app_slots_desc">Apps hinzufügen oder entfernen</string>
+
+    <!-- Protected: Contacts -->
+    <string name="contacts_group">Kontakte &amp; Kommunikation</string>
+    <string name="core_contacts">Kernkontakte</string>
+    <string name="core_contacts_desc">Lege Telefon-Kontakte fest</string>
+    <string name="core_contacts_desc_select">Wähle welche Kontakte oben in deinem Telefon erscheinen</string>
+
+    <!-- Protected: Security -->
+    <string name="security_group">Sicherheit &amp; Zugang</string>
+    <string name="change_pin">PIN ändern</string>
+    <string name="change_pin_desc">Aktualisiere deinen Zugriffscode</string>
+    <string name="toggle_pin_protection">PIN-Schutz</string>
+    <string name="toggle_pin_protection_desc">Aktiviere/Deaktiviere den Schutz für Einstellungen</string>
+
+    <!-- Protected: System -->
+    <string name="system_group">System</string>
+    <string name="android_settings_access">Android-Einstellungen</string>
+    <string name="android_settings_access_desc">Zugriff auf Systemeinstellungen</string>
+    <string name="reset_launcher">Launcher zurücksetzen</string>
+    <string name="reset_launcher_desc">Stelle Werkseinstellungen wieder her</string>
+
+    <!-- PIN Dialog -->
+    <string name="pin_prompt">Geschützte Einstellungen</string>
+    <string name="pin_prompt_desc">Gib deine PIN ein, um auf geschützte Einstellungen zuzugreifen</string>
+    <string name="pin_input_hint">Gib 4-stellige PIN ein</string>
+    <string name="pin_error">Falsche PIN</string>
+    <string name="pin_show">PIN anzeigen</string>
+    <string name="pin_hide">PIN ausblenden</string>
+    <string name="pin_confirm">PIN festlegen</string>
+    <string name="pin_confirm_desc">Gib eine neue 4-stellige PIN ein</string>
+    <string name="pin_setup_warning">Klicken Sie auf \"Bestätigen\", nachdem Sie sich Ihre PIN notiert haben. Sie können Ihre PIN nach dem Verlassen der geschützten Einstellungen nicht mehr wiederherstellen!</string>
+    <string name="pin_mismatch">PINs stimmen nicht überein</string>
+
+    <!-- Protected/Advanced button -->
+    <string name="protected_settings_button">Geschützte Einstellungen</string>
+    <string name="advanced_settings_button">Erweiterte Einstellungen</string>
+    <string name="protected_settings_desc">Gib die PIN ein, um geschützte Einstellungen zu öffnen</string>
+    <string name="advanced_settings_desc">Öffne erweiterte Einstellungen</string>
+
+    <!-- Actions -->
+    <string name="unlock">Entsperren</string>
+    <string name="confirm">Bestätigen</string>
+    <string name="enabled">Aktiviert</string>
+    <string name="disabled">Deaktiviert</string>
+    <string name="none_selected">Keine ausgewählt</string>
+    <string name="reset_launcher_confirm_message">Wollen Sie wirklich den Launcher zurücksetzen und die Werkseinstellungen wiederherstellen?</string>
+    <string name="yes">Ja</string>
+
+    <!-- Phone Screen -->
+    <string name="phone_screen_title">Telefon</string>
+    <string name="phone_screen_favorites">Favoriten</string>
+    <string name="phone_screen_all_contacts">Alle Kontakte</string>
+    <string name="phone_screen_no_contacts">Keine Kontakte vorhanden</string>
+    <string name="gallery_screen_no_images">Keine Medien vorhanden</string>
+    <string name="phone_screen_loading">Kontakte werden geladen&#8230;</string>
+    <string name="phone_screen_permission_msg">Zusätzliche Berechtigungen sind für diese Funktion erforderlich.</string>
+    <string name="phone_screen_grant_btn">Berechtigung erteilen</string>
+    <string name="phone_screen_load_error">Fehler beim Laden der Kontakte</string>
+    <string name="phone_screen_permission_denied">Kontakt-Berechtigung erforderlich</string>
+
+    <!-- Add Contact -->
+    <string name="add_contact_title">Kontakt hinzufügen</string>
+    <string name="add_contact_name_hint">Name</string>
+    <string name="add_contact_phone_hint">Telefonnummer</string>
+    <string name="add_contact_success">Kontakt hinzugefügt</string>
+    <string name="add_contact_error">Fehler beim Hinzufügen</string>
+    <string name="add_contact_empty_error">Name und Nummer erforderlich</string>
+    <string name="add_contact_button">Kontakt hinzufügen</string>
+
+    <!-- Contact Actions -->
+    <string name="contact_action_call">Anrufen</string>
+    <string name="contact_action_edit">Kontakt bearbeiten</string>
+    <string name="contact_action_delete">Kontakt löschen</string>
+    <string name="contact_delete_confirm">Möchten Sie diesen Kontakt wirklich löschen?</string>
+    <string name="contact_delete_success">Kontakt gelöscht</string>
+    <string name="contact_update_success">Kontakt aktualisiert</string>
+
+    <!-- Notes -->
+    <string name="notes_screen_title">Notizen</string>
+    <string name="notes_no_notes">Noch keine Notizen. Tippe auf +, um eine hinzuzufügen.</string>
+    <string name="notes_save">Notiz speichern</string>
+    <string name="notes_delete">Notiz löschen</string>
+    <string name="notes_placeholder">Schreibe deine Notiz hier&#8230;</string>
+    <string name="notes_delete_confirm">Diese Notiz löschen?</string>
+    <string name="notes_discard_title">Ungespeicherte Änderungen</string>
+    <string name="notes_discard_message">Du hast ungespeicherte Änderungen. Diese gehen verloren, wenn du zurückgehst.</string>
+    <string name="notes_add_button">Notiz hinzufügen</string>
+
+    <!-- Dialer -->
+    <string name="tab_contacts">Kontakte</string>
+    <string name="tab_dialer">Wählfeld</string>
+    <string name="dialer_delete_digit">Löschen</string>
+
+    <!-- Setup Wizard -->
+    <string name="wizard_welcome_title">Willkommen bei MinimalPersonalOS</string>
+    <string name="wizard_welcome_text">Dein minimales UI, um dich in einer Zeit von aufmerksamkeitsfordernden Interfaces zu fokussieren. Alle Essentials, die du brauchst, sehr einfach zu bedienen.</string>
+
+    <string name="wizard_app_count_title">Home-Bildschirm konfigurieren</string>
+    <string name="wizard_app_count_text">Wähle aus, wie viele Apps du auf deinem Home-Bildschirm haben möchtest (0–4).</string>
+    <string name="wizard_app_count_science">Studien deuten darauf hin, dass die Begrenzung auf maximal 4 Apps optimal ist, um kognitive Barrieren zu eliminieren und Überlastung zu reduzieren.</string>
+    <string name="wizard_apps_selected">%1$d / 4 Apps ausgewählt</string>
+
+    <string name="wizard_primary_color_title">Primärfarbe</string>
+    <string name="wizard_primary_color_text">Wähle eine Farbe für Schaltflächen und Icons, um dein Erlebnis zu personalisieren.</string>
+
+    <string name="wizard_visual_profile_title">Visuelles Profil</string>
+    <string name="wizard_visual_profile_text">Wähle einen Stil, der zu deinen Bedürfnissen passt.</string>
+    <string name="wizard_profile_minimal_title">Minimalistisch</string>
+    <string name="wizard_profile_minimal_desc">Rein textbasierter Launcher für maximalen Fokus.</string>
+    <string name="wizard_profile_simple_title">Klar und Einfach</string>
+    <string name="wizard_profile_simple_desc">Große App-Icons, simpel und besser für die Barrierefreiheit.</string>
+
+    <string name="wizard_all_set_title">Alles bereit!</string>
+    <string name="wizard_all_set_text">Viel Spaß mit deinem fokussierten mobilen Erlebnis.</string>
+    <string name="wizard_finish">Fertigstellen</string>
+
+    <string name="next_button">Weiter</string>
+    <string name="delete_button">Löschen</string>
+    <string name="delete_image_confirm">Möchten Sie dieses Bild wirklich löschen?</string>
+    <string name="delete_video_confirm">Möchten Sie dieses Video wirklich löschen?</string>
+    <string name="media_management_group">Medienverwaltung</string>
+    <string name="instant_delete">Sofortiges Löschen</string>
+    <string name="instant_delete_desc">Bilder ohne Systembestätigung löschen. Erfordert Zugriff auf alle Dateien.</string>
+</resources>

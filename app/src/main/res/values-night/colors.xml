@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Matching Color.kt Dark Theme -->
+    <color name="primary_purple">#6650a4</color>
+    <color name="primary_pink">#AD1457</color>
+    <color name="primary_ochre">#827717</color>
+    <color name="primary_mint">#00695C</color>
+
+    <color name="launcher_background">#1C1B1F</color>
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>
