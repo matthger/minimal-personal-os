@@ -1,85 +1,91 @@
 # Minimal Personal OS
 
-Minimalistischer Android-Launcher mit Basis-Apps für einfache Bedienung und bewussten Medienkonsum.
+<p align="right">
+  <b>🇬🇧 English</b> &nbsp;|&nbsp; <a href="README.de.md">🇩🇪 Deutsch</a>
+</p>
 
-Entwickelt im Rahmen eines Master-Studienprojekts von Matthias Gerhard und Max Timur Sönmez.
+A minimalist Android launcher and core application suite designed for low cognitive load, effortless accessibility, and intentional digital well-being.
 
-Das Projekt geht von der Beobachtung aus, dass bestehende Vereinfachungsansätze für ältere Menschen oder Personen mit geringer Technikaffinität entweder drastisch Funktionen streichen oder ihre Hilfsmittel so tief im System vergraben, dass genau jene Fähigkeiten zur Einrichtung nötig sind, die der Zielgruppe fehlen. Minimal Personal OS ersetzt deshalb die komplette Startoberfläche, behält die Kernfunktionen aber erhalten und lässt sich über zwei visuelle Profile an wachsende Nutzererfahrung anpassen.
+Developed as a Master's project by **Matthias Gerhard** and **Max Timur Sönmez**.
 
-## Funktionsumfang
+---
 
-- **Launcher** als vollwertiger Home-Screen mit frei belegbaren Shortcut-Kacheln
-- **Setup-Wizard** für die barrierearme Ersteinrichtung
-- **Zwei visuelle Profile**: 
-  - *Minimalistic*: rein textbasiert und fokussiert
-  - *Clear and Simple*: große Icons mit eindeutig beschrifteten Schaltflächen
-- Anpassbare Schriftgröße, Farbgebung, Helligkeit und akustische Rückmeldung (Audio-Feedback)
-- **Telefon** mit Ziffernfeld und integrierter Kontaktverwaltung
-- **Notizen** mit lokaler Persistenz
-- **Galerie** für Fotos und Videos
-- **Geschützte Einstellungen** mit PIN-Sicherung, damit Angehörige die Konfiguration übernehmen können, ohne dass sie im Alltag versehentlich verstellt wird
+Traditional smartphone simplification solutions for older adults or individuals with low digital literacy often either drastically strip away functionality or bury accessibility aids deep inside settings menus—requiring the exact technical expertise the target audience lacks. **Minimal Personal OS** replaces the stock Android home screen while preserving core capabilities. It adapts to the user's growing familiarity through two distinct visual profiles.
 
-## Oberfläche
+## Features
 
-Dieselbe Startseite in beiden Profilen: Links reduziert auf Beschriftungen und eine schlanke Symbolleiste, rechts mit App-Icons und beschrifteten Schaltflächen für die vier Kernfunktionen.
+- **Launcher**: Full-fledged Android home screen with customizable shortcut tiles.
+- **Setup Wizard**: Guided, barrier-free first-time onboarding.
+- **Two Visual Profiles**:
+  - *Minimalistic*: Purely text-driven, distraction-free interface.
+  - *Clear and Simple*: High-contrast large icons with clearly labeled touch targets.
+- **Adaptive Ergonomics**: Adjustable typography scale, high-contrast color palettes, universal brightness slider, and auditory touch feedback.
+- **Phone & Contacts**: Streamlined dialer with quick-dial contact management.
+- **Notes**: Lightweight note-taking with local database persistence.
+- **Gallery**: Clean photo and video browser.
+- **Protected Settings**: PIN-secured configuration area allowing caregivers or relatives to configure device parameters without risk of accidental misconfiguration in daily use.
 
-| Profil *Minimalistic* | Profil *Clear and Simple* |
+## User Interface
+
+The same home screen across both profiles: The *Minimalistic* profile focuses on clean typography and a lean status bar, while *Clear and Simple* provides prominent icons and labeled buttons for the four primary actions.
+
+| Profile *Minimalistic* | Profile *Clear and Simple* |
 | --- | --- |
-| <img src="screenshots/screenshot_minimal.jpg" alt="Startseite im minimalistischen Profil" width="420" /> | <img src="screenshots/screenshot_simple.jpg" alt="Startseite im Profil Clear and Simple" width="420" /> |
+| <img src="screenshots/screenshot_minimal.jpg" alt="Home screen in Minimalistic profile" width="420" /> | <img src="screenshots/screenshot_simple.jpg" alt="Home screen in Clear and Simple profile" width="420" /> |
 
-Die Einstellungen sind zweistufig aufgebaut: Was man gefahrlos anpassen kann, liegt offen. Alles, was die Grundkonfiguration betrifft, liegt hinter der PIN.
+Settings follow a two-tier model: everyday settings (profile switch, font size, brightness) are freely accessible, while core configurations (app slots, contacts, PIN setup) require authentication.
 
-| Offene Einstellungen | Geschützte Einstellungen |
+| Open Settings | Protected Settings |
 | --- | --- |
-| <img src="screenshots/screenshot_settings.jpg" alt="Einstellungen mit Profilwahl, Schriftgröße und Helligkeit" width="420" /> | <img src="screenshots/screenshot_advanced.jpg" alt="Geschützte Einstellungen mit App-Slots, Kontakten und PIN-Schutz" width="420" /> |
+| <img src="screenshots/screenshot_settings.jpg" alt="Settings showing profile selection, text size, and brightness" width="420" /> | <img src="screenshots/screenshot_advanced.jpg" alt="Protected settings with app slots, contacts, and PIN configuration" width="420" /> |
 
-## Technischer Überblick
+## Technical Overview
 
-Kotlin mit Jetpack Compose, Single-Activity-Architektur nach modernem MVVM-Muster. Die Navigation erfolgt über eine `Screen`-Enum in `MainApp.kt`.
+Built with Kotlin and Jetpack Compose following modern MVVM architecture with a single-activity design. In-app navigation is managed via a type-safe `Screen` enum in `MainApp.kt`.
 
 ```text
 app/src/main/java/com/tisosoft/minimalpersonalos/
-├── MainActivity.kt          Einstiegspunkt
+├── MainActivity.kt          Entry point
 ├── ui/
-│   ├── MainApp.kt           Navigation, globales Theming, Font-Skalierung
+│   ├── MainApp.kt           Navigation, global theming, font scaling
 │   ├── screens/             Launcher, Phone, Notes, Gallery, Settings,
 │   │                        ProtectedSettings, SetupWizard
-│   ├── components/          Wiederverwendbare Dialoge und Bausteine
-│   └── theme/               Farben, Typografie, Theme
+│   ├── components/          Reusable dialogs and UI building blocks
+│   └── theme/               Colors, typography, theme definitions
 ├── viewmodel/               Gallery, Notes, Phone, Settings
-├── data/                    App-, Contact-, Media-, Settings-Repository
-│   └── notes/               Room-Datenbank für Notizen
+├── data/                    App, Contact, Media, Settings repositories
+│   └── notes/               Room database for notes
 ├── model/                   AppInfo, MediaItem, VisualProfile
-└── utils/                   Helligkeit, Ton, Zeit
+└── utils/                   Brightness, audio, time utilities
 ```
 
-Einstellungen liegen in `SharedPreferences`, Notizen in einer Room-Datenbank. Repositories kapseln die Zugriffe auf Android-Systemdienste wie `PackageManager`, `ContactsProvider` und `MediaStore`.
+Configuration and user preferences persist via `SharedPreferences`, notes in a local SQLite database using Room. Dedicated repository layers abstract Android system services such as `PackageManager`, `ContactsProvider`, and `MediaStore`.
 
-### Build-Konfiguration
+### Build Specifications
 
-| Bereich | Konfiguration |
+| Component | Target / Version |
 | --- | --- |
-| Sprache | Kotlin 2.4.10 |
-| UI | Jetpack Compose (BOM 2026.08.00) |
-| minSdk / targetSdk | 29 / 37 |
-| JVM-Target | 17 |
+| Language | Kotlin 2.4.10 |
+| UI Toolkit | Jetpack Compose (BOM 2026.08.00) |
+| minSdk / targetSdk | 29 (Android 10) / 37 |
+| JVM Target | Java 17 |
 | Gradle / AGP | 9.7.0 / 9.2.1 |
-| Persistenz | Room 2.8.4 mit KSP |
-| Bildladen | Coil 3.5.0 |
+| Persistence | Room 2.8.4 with KSP |
+| Image Loading | Coil 3.5.0 |
 
-## Bauen und Ausführen
+## Building & Installation
 
-Voraussetzung ist Android Studio mit JDK 17+.
+Requires Android Studio with JDK 17+.
 
 ```bash
 ./gradlew assembleDebug
 ./gradlew installDebug
 ```
 
-Die App registriert sich als Home-Launcher (`android.intent.category.HOME`). Nach der Installation kann sie in den Android-Systemeinstellungen als Standard-Startbildschirm ausgewählt werden.
+The application registers itself as a home launcher (`android.intent.category.HOME`). After installation, select Minimal Personal OS as your default launcher in the Android system settings.
 
-Benötigte Berechtigungen umfassen Kontakte, Telefonie, Medienzugriff und das Schreiben von Systemeinstellungen (für die Helligkeitsregelung).
+Required permissions include Contacts, Phone/Dialer, Media Access, and System Settings write permissions (for universal brightness adjustment).
 
-## Lizenz
+## License
 
-Dieses Projekt ist unter der [MIT-Lizenz](LICENSE) lizenziert.
+This project is licensed under the [MIT License](LICENSE).
